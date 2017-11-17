@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="http://webdevbasics.net/scripts/demo.php" method="post">
+        <label >Please enter information</label>
+
+        <fieldset id="information">
+            <legend id="Info">Basic Information</legend>
+						<br>
+            <label>Owner's Name:</label>
+            <input type="text" name="info_ownername" id="info_ownername" placeholder="Please enter owner's name">
+            <br> 
+
+            <label> Pet's Name:</label>
+            <input type="text" name="info_petname" id="info_petname">
+            <br> 
+
+            <label> Pet's Date of Birth:</label>
+            <input type="date" required name="info_petbirth" id="info_petbirth" value="2017-10-10">
+            <br>
+
+            <label> Owner's Page:</label>
+            <input type="url" name="info_sharingpage" id="info_url">
+            <br>
+
+            <label> Owner's Email</label>
+            <input type="email" name="info_email" id="info_email">
+            <br>
+
+            <label> Telephone:</label>
+            <input type="tel" name="info_tel" id="info_tel">
+            <br>
+        </fieldset>
+
+        <fieldset id="detail">
+            <legend>Pet Details</legend>
+            
+            <label>Name the kind of Pets you own:</label>
+            <br>
+            Dog
+            <input type="checkbox" name="det_kind" id="det_kind" value="dog">
+            Cat
+            <input type="checkbox" name="det_kind" id="det_kind" value="cat">
+            Fish
+            <input type="checkbox" name="det_kind" id="det_kind" value="fish">
+            Hedgehog
+            <input type="checkbox" name="det_kind" id="det_kind" value="hedgedog">
+            <br>
+            <br>
+
+            Do you have license for this pet?
+            Yes
+            <input type="radio" name="def_license" id="def_license" value="yes" checked>
+            No
+            <input type="radio" name="def_license" id="def_license" value="no">
+            <br>
+            <br>
+
+            Special Pet Instructions:
+            <br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter special instructions here" rows="10" cols="4"></textarea>
+            <br>
+            <br>
+
+            How many times visited?
+            <br>
+            <input type="number" min="1" max="10" step="1" value="1" size="10" name="def_times" id="def_times">
+            <br>
+            <br>
+
+            Select Pet food:
+            <br>
+            <select name="def_petfood" id="def_petfood" size="2">
+                <option value="purina">Purina</option>
+                <option value="Iams">Iams</option>
+            </select>
+
+            <label> Food Required:</label>
+            <input type="range" min="1" max="10" name="info_slider" id="info_slider">
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <br>
+
+        <input type="submit" value="Register Pet">
+        <input type="button" value="Clear Form">
+    </form>
+</body>
+</html>

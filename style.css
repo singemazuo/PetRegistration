@@ -1,0 +1,51 @@
+body form{
+    width: 80%;
+    margin: auto auto;
+    padding: 1% 2%;
+    background-color: #e5e5e5;
+}
+
+fieldset{
+		text-align: left;
+    border: thin solid red;
+    margin: 5pt auto;
+}
+
+input { 
+    border: none; 
+        /*margin-left: 10px;*/; 
+				margin-bottom: 10px; 
+				/*padding-right: 50px;*/        
+}
+
+label{
+    display:inline-block;
+    width:200 px;
+}
+
+fieldset label{
+    margin-left: 2px;
+	margin-right: 2px;
+}
+
+fieldset#information label {
+    text-align: right;
+    width: 150px;
+}
+
+fieldset#information input {
+    text-align: left;
+}
+
+/*input#info_petname {margin-left: 56px;}*/
+
+/*input#info_ownername {margin-left:34px;}*/
+
+fieldset legend{background-color: black;
+								color: white;
+								font-weight: 300px; }
+								
+
+
+
+
